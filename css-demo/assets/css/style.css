@@ -17,6 +17,19 @@ html {
     box-sizing: inherit;
   }
 
+/* ------------------------Utility Classes -----------------------*/
+
+.container{
+    width:80vw;
+    max-width:960px;
+    margin:40px auto;
+}
+
+/* ------------------------Responsive Images -----------------------*/
+
+img{
+    max-width:100%;
+}
 
 /* ------------------------Global Styles -----------------------*/
 
@@ -76,8 +89,78 @@ header.primary nav ul li{
 header.primary nav ul li a{
     color:#fff;
     text-decoration:none;
-    background:#000000;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.4);
     padding:8px 10px;
     border-radius:20px 4px;
-    border:2px solid #c0c0c0;
+    border:2px solid rgba(0,0,0,.4);
+    transition:0.8s;
+}
+
+header.primary nav ul li a:hover,
+header.primary nav ul li a:active{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#intro{
+
+}
+
+#intro h2{
+    color:#4590BF;
+    border-bottom:1px dotted #c0c0c0;
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:30px;
+}
+
+#content article.post{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+
+#content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+
+article.post figure {
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------Media Queries (Mobile/Screen Compliance)-----------------------*/
+
+@media screen and (max-width:600px){
+    header.primary nav ul{
+        flex-direction:column;
+    }
+
+    header.primary nav a{
+        display:block;
+    }
+
+    header.primary nav li{
+        margin-bottom: 10px;
+    }
 }
