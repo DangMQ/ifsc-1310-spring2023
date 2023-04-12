@@ -103,7 +103,8 @@ header.primary nav ul li a:active{
 }
 
 #intro{
-
+    border-bottom:1px dotted #c0c0c0;
+    padding-bottom:15px;
 }
 
 #intro h2{
@@ -133,6 +134,59 @@ header.primary nav ul li a:active{
 article.post figure {
     margin: 0;
   }
+
+time.post-date,
+figcaption,
+.post-meta{
+    text-transform:uppercase;
+    color:#c0c0c0;
+}
+
+.post figure img{
+    border:5px solid #c0c0c0;
+    padding:2px;
+    background:red;
+}
+
+article.post a{
+    color:#F2CB05;
+}
+
+article.post a:hover{
+    text-decoration:none;
+}
+
+aside[role="complementary"]{
+    background-color:#F2CB05;
+    color:#fff;
+}
+
+/* Attribute Selector Example
+a[target="_blank"]{
+    color:red;
+}
+*/
+
+aside .container{
+    display:flex;
+    gap:40px;
+    flex-direction:row;
+}
+
+aside .widget a{
+    display:block;
+    text-align:right;
+    padding-top:20px;
+    color:white;
+}
+
+aside .widget footer{
+    display:none;
+}
+
+
+
+
 
 
 
