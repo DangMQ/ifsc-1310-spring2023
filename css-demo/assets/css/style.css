@@ -25,10 +25,106 @@ html {
     margin:40px auto;
 }
 
+.img-right{
+    float:right;
+    border:1px solid #c0c0c0;
+    padding:2px;
+    margin:10px 0 10px 20px;
+}
+
+.img-left{
+    float:left;
+    border:1px solid #c0c0c0;
+    padding:2px;
+    margin:10px 20px 10px 0;
+}
+
+.img-center{
+    display:block;
+    border:1px solid #c0c0c0;
+    padding:2px;
+    margin:20px auto;
+
+}
+
 /* ------------------------Responsive Images -----------------------*/
 
 img{
     max-width:100%;
+}
+
+
+/* ------------------------Tables -----------------------*/
+
+table{
+    width:100%;
+    border:1px solid #c0c0c0;
+    border-collapse:collapse;
+    
+}
+
+table caption{
+    font-weight:bold;
+    margin:10px;
+}
+
+table tr:nth-child(even){
+    background-color:rgba(0,0,0,.1);
+}
+
+table tr:hover{
+    background-color:rgba(0,0,0,.2);
+}
+
+table th{
+    background-color:#4590BF;
+    color:#fff;
+    padding:10px;
+}
+
+table td{
+    border:1px solid #c0c0c0;
+    padding:5px;
+    text-align:right;
+    width:33%;
+}
+
+td:first-of-type{
+    text-align:left;
+}
+
+
+/* ------------------------Lists -----------------------*/
+
+ol{
+    list-style-type:lower-roman;
+    
+}
+
+li{
+    
+}
+
+ul ul{
+    list-style-type:square;
+    color:red;
+}
+
+dl{
+
+}
+
+dt{
+    font-weight:bold;
+}
+
+dd{
+    margin:0;
+}
+
+dd + dt{
+    margin-top:20px;
+    color:red;
 }
 
 /* ------------------------Global Styles -----------------------*/
@@ -117,6 +213,8 @@ header.primary nav ul li a:active{
     flex-direction:row;
     justify-content: space-between;
     gap:30px;
+    border-bottom:1px dotted #c0c0c0;
+    padding-bottom:2.6rem;
 }
 
 #content article.post{
@@ -182,6 +280,11 @@ aside .widget a{
 
 aside .widget footer{
     display:none;
+}
+
+#practice h2{
+    color:red;
+    border-bottom:1px dotted #c0c0c0;
 }
 
 
