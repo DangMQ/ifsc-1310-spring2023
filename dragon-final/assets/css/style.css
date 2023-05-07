@@ -1,8 +1,8 @@
 
 /* Template Colors
-    Main Color: #27418C
-    Lighter Colors: #2A40BF, #2445A6
-    Darker Colors: #1B2A59, #0B1226
+    Main Color: #818B8C
+    Lighter Colors: #97A3A6
+    Darker Colors: #515659, #262626
     */
 
 
@@ -129,3 +129,10 @@ dd + dt{
 
 /* ------------------------Global Styles -----------------------*/
 
+body{
+    background-color:#818B8C;
+}
+
+header.primary h1 a, h2{
+    color:#fff;
+}
